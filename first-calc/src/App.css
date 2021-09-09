@@ -1,0 +1,73 @@
+.app-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.app {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+}
+
+.display-container {
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.display input, .display input:focus {
+  width: 100%;
+  border: none;
+  outline-width: 0;
+  background-color: black;
+  height: 30px;
+  color: white;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-align: right;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  color: #333;
+  height: 10px;
+}
+
+.buttons {
+  padding: 10px;
+}
+
+.button-row {
+  margin: 5px;
+  display: flex;
+}
+
+.button-row:first-of-type input, .button-row input:last-child {
+  color: rgb(236, 112, 10);
+}
+
+.button-row:last-of-type input:last-of-type {
+  border: 1px solid rgb(236, 112, 10);
+  border-radius: 10px;
+  background-color: rgb(236, 112, 10);
+  outline-width: 0;
+  color: white;
+}
+
+.button-row input {
+  width: 24%;
+  height: 50px;
+  display: inline-block;
+  margin: 0 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline-width: 0;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+.button-row input:hover {
+  cursor: pointer;
+}
