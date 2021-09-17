@@ -7,14 +7,14 @@ class TodoApp {
     return this._storeAccessor.todoLists;
   }
 
-  addToTodoList(title, description) {
+  addToTodoList(title, description, addBtn) {
     if (!(title && description)) return;
 
     const data = { title, description };
     this._storeAccessor.addToStore(data);
 
     const node = document.getElementById("todo-list");
-    this.addToDOM(node, data);
+    this.addToDOM(node, data, addBtn);
   }
 
   removeFromList(title) {
@@ -44,14 +44,16 @@ class TodoApp {
 
     // add click event handler to the edit button
     editSpan.addEventListener("click", function () {
-      const listDiv = btn.parentElement.parentElement;
+      const inputTodoEl = document.getElementById("input-todo"),
+        inputDescEl = document.getElementById("input-description");
+      const listDiv = editSpan.parentElement.parentElement;
       addBtn.listDiv = listDiv;
       addBtn.innerHTML = "Update";
       addBtn.className = "update";
 
       const title = listDiv.getAttribute("title");
-      const list = todoApp.todoLists;
-      const data = list.find((val) => val.title === title);
+      const data = todoApp.todoLists.find((val) => val.title === title);
+
       inputTodoEl.value = data.title;
       inputDescEl.value = data.description;
     });
@@ -74,9 +76,9 @@ class TodoApp {
     );
   }
 
-  displayLists(node) {
+  displayLists(node, addBtn) {
     for (let data of this.todoLists) {
-      this.addToDOM(node, data);
+      this.addToDOM(node, data, addBtn);
     }
   }
 

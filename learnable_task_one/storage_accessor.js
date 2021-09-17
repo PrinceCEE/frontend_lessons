@@ -25,9 +25,8 @@ class LocalStorageAccessor {
   }
 
   updateItem(oldTitle, data) {
-    console.log(oldTitle, data);
     const lists = this.todoLists;
-    const index = lists.findIndex((val) => val.title);
+    const index = lists.findIndex((val) => val.title === oldTitle);
     lists[index] = data;
     this._store.setItem(this.storeName, JSON.stringify(lists));
   }
