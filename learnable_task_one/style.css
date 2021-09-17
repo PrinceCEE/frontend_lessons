@@ -1,0 +1,99 @@
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+main > div {
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.add-list {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  height: 35px;
+}
+
+.add-list > * {
+  margin: 0 5px;
+}
+
+input {
+  outline-width: 0;
+  outline: none;
+  border: 1px blue solid;
+  border-radius: 5px;
+  flex: 2 1 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#todo-list, #completed-list {
+  margin-top: 30px;
+}
+
+#add {
+  flex: auto;
+  width: 60px;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: blue;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+#add.update {
+  background-color: green;
+}
+
+#add:hover {
+  background-color: rgba(0, 0, 100, 0.897);
+}
+
+#add.update:hover {
+  background-color: rgba(0, 100, 0, 0.897);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+div > h3 + p {
+  font-size: 0.9rem;
+  padding-left: 10px;
+}
+
+.list .material-icons {
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.list .material-icons.delete {
+  color: red;
+}
+
+.list .material-icons.edit {
+  color: blue;
+}
