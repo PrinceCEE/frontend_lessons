@@ -7,4 +7,4 @@ This is a collection ReactJs calculator apps, to fully understand hooks like:
 
 ## Apps' path
 - First app - `./first-calc` - uses useState for state management
-- Second app - `./second-calc` - uses useReducer for state management
+- Learnable Frontend task onw - `./learnable_task_one` - Todo app using vanilla JS
