@@ -38,7 +38,7 @@ console.log(
   "Welcome to this daily dairy, dear mere mortal.\nLog your activities for the days so we can know when you are likely to turn to a wolf."
 );
 
-// prompt the user to log their activities for the day, after 1s of delay
+// prompt the user to log their activities for the day, after 500ms of delay
 setTimeout(() => {
   // prompt users to enter days.
   while (true) {
@@ -107,4 +107,4 @@ setTimeout(() => {
       )}`
     );
   }
-}, 1000);
+}, 500);
