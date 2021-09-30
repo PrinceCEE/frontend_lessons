@@ -33,7 +33,7 @@ const Buttons = () => {
         <Button value="=" />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Buttons;
