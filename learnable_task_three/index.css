@@ -1,0 +1,87 @@
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  background-image: url('bg.jpg');
+  height: 45vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  box-sizing: content-box;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 51, 64, 0.8);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main > div {
+  max-width: 960px;
+}
+
+/* .header {
+  min-height: 0px;
+  position: relative;
+  display: block;
+  box-sizing: content-box;
+}
+
+.headerBg {
+  background-image: url('/images/hng-img_30.jpg');
+  height: 515px;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+.content {
+  z-index: 2;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+.textProfile {
+  font-weight: 200;
+} */
